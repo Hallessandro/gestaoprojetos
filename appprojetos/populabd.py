@@ -16,7 +16,7 @@ at01 = Atividade(descricao="Fazendo consultas", dt_inicio="2016-1-1", dt_termino
                  custo=20, dsvol=nv01)
 at01.save()
 
-pj01 = Projeto_pesquisa(titulo="Lista de atividade", dt_inicio="2016-6-8", dt_termino="2016-6-12",
+pj01 = Projeto_pesquisa(titulo="Monic crazy life ", dt_inicio="2016-6-8", dt_termino="2016-6-12",
                         justificativa="Praticar os conceitos vistos em sala",
                         metodologia="Atividade prática",
                         resultados_esperados="Terminar antes do prazo",
