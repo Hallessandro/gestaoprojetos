@@ -2,8 +2,9 @@ from appprojetos.models import *
 
 # a. Listar todos os projetos com seus respectivos membros
 for pj in Projeto_pesquisa.objects.all():
-    print("Projeto: {0:s} - Membros {1:s}".format(pj.titulo, pj.membros))
-    #Não tá funcionando
+    print(pj.titulo)
+    for m in pj.membros.all():
+        print("Membros: ", m.nome)
 
 # b. Listar todas as atividades que tenham sido executadas no mês de maio de 2015
 print(Atividade.objects.filter(dt_inicio__month="05"))
@@ -12,4 +13,8 @@ print(Atividade.objects.filter(dt_inicio__month="05"))
 print(Membros.objects.filter(nome__startswith="A"))
 
 # d. Listar o custo total de cada projeto
-    print(Projeto_pesquisa.objects.filter(pj.atividade.descricao))
+for pj in Projeto_pesquisa.objects.all():
+    print(pj.titulo)
+    for c in pj.atividade.descricao:
+        total = pj.atividade.custo
+    print(total)
